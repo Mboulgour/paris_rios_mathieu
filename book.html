@@ -27,10 +27,37 @@
         <div class="page leftpage">
           Add a bribe
           <!-- TODO : Form -->
+          <form class="form-bribe">
+            <label for="inputBribe">Name</label>
+            <input id="inputBribe" type="text"/>
+            <label for="inputPayment">Payment</label>
+            <input id="inputPayment" type="number"/>
+            <button class="btn-form">Pay!</button>
+          </form>
         </div>
-
         <div class="page rightpage">
+          <p class="bribes-title">S</p>
           <!-- TODO : Display bribes and total paiement -->
+          <div class="display-bribes">
+            <div class="bribes-names">
+              <p>Thieuma</p>
+              <p>Gregggs</p>
+              <p>Darlene</p>
+            </div>
+            <div class="bribes-payments">
+              <p>1200 $</p>
+              <p>1301 $</p>
+              <p>50000 $</p>
+            </div>
+          </div>
+          <div class="bribes-total">
+            <div class="bribes-total--title">
+              <p>Total:</p>
+            </div>
+            <div class="bribes-total--value">
+              <p>52 501$</p>
+            </div>
+          </div>
         </div>
       </div>
       <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
