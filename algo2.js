@@ -19,9 +19,9 @@
 
 // Corrected function
 const minMaxLoop = (array) => {
-  let min = 0;
-  let max = 0;
   let result = [];
+  let min = array[0] // Set a default value 
+  let max = array[0] // Set a default value 
   for(let i = 0; i < array.length; i++) {
     if (array[i] < min) {
       min = array[i];
@@ -45,5 +45,5 @@ const minMax = (array) => {
     return result
 }
 
-console.log(minMaxLoop([1, 2, -10, 8, 0, -25, 250]))
+console.log(minMaxLoop([8, 250]))
 console.log(minMax([1, 2, -10, 8, 0, -25, 250]))
