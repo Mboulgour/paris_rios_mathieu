@@ -17,3 +17,24 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+// We can pass column and seats in parameters of the function but since they are defined in the rules of the exercise it doesn't really make sense.
+const seatsInTheater = () => {
+  const columns = 26
+  const seatsPerColumn = 100
+  const result = []
+  // Loop through the columns
+  for(let i = 1; i < columns+1; i++){
+    let tempColumn = i.toLocaleString()
+    // Loop through the seatsPerColumns
+    for(let j = 1; j < seatsPerColumn+1; j++){
+      let tempSeats = j.toLocaleString()
+      // Push iteration in the result array
+      result.push(`${tempColumn} - ${tempSeats}`)
+    }
+  }
+  return result
+}
+
+
+console.log(seatsInTheater())
